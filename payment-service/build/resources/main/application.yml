@@ -1,0 +1,20 @@
+
+server:
+  port: 9000
+
+spring:
+  application:
+    name: payment-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/orderdb
+    username: root
+    password: root
+    driver-class: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.codding.cqrs: DEBUG
+    org.hibernate: ERROR
